@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影院详细</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/filmDetails.css">
+    
+</head>
+<body>
+    <div class="head">
+        <div class="headMsg">
+            <div class="headMsg-left">
+                <a href="../index.html">
+                    <img src="../img/home1.png" alt="">
+                    <span>团购网首页</span>
+                </a>
+                
+            </div>
+            <div class="headMsg-center">
+                厦门<span>[切换城市]</span>
+            </div>
+            <div class="headMsg-right" id='head-right'>
+                <div id='login'> 登录 </div>
+                <div id='register'> 注册 </div>
+                <div class="headNavDrop" style="background-color: #333333">
+                    <a id='myCenter'> 个人中心 </a>
+                    <ul class="headNavDropDown">
+                        <li>我的团购券</li>
+                        <li id='center'>团购订单</li>
+                        <li>我的评价</li>
+                        <li>我的收藏</li>
+                        <li>我的钱包</li>
+                        <li>账户设置</li>
+                    </ul>
+                </div>
+                <div id='businessCenter'> 商家中心 </div>
+                <div> 更多 </div>
+            </div>
+        </div>            
+    </div>
+    <!-- search -->
+    <div class="search">
+        <div class="search-left">
+            <a href="https://www.cykjxm.com/"><img src="../img/chuanYi.jpg" alt=""></a>
+            <a href="../index.html"><div class="search-left-msg">团购网</div>  </a>
+        </div>
+        <div class="search-right">
+            <div class="search-right-top">
+                <input type="text" placeholder="输入关键词进行搜索" id='searchMsg'>
+                <span id='searchBtn'>搜索</span>
+                
+            </div>
+            <div class="search-right-bottom">
+                中华城 万象城 SM城市广场 万达广场 中山路 鼓浪屿 曾厝垵 环岛路 明发广场
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-left" id='drop'>
+            全部团购分类
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="../index.html" style="color: #ffffff;">团购首页</a></li>
+                <li  id='foodLink'>美食</li>
+                <li>丽人</li>
+                <li id='filmLink'  style="background-color: #eb3700;">电影</li>
+                <li>酒店</li>
+                <li>休闲娱乐</li>
+                <li>医疗</li>
+            </ul>
+        </div>
+        <!-- <div class="banner"> -->
+            <div class="nav-list" id='dropList'>
+                <ul>
+                    <li class="drop">美食
+                        <span>8-10人餐 ></span>
+                        <span>火锅</span>
+                        <span>自助餐</span>
+                        <div class="nav-list-drop">
+                            <p>美食</p>
+                            <ul>
+                                <li>聚餐宴请</li>
+                                <li>江浙菜</li>
+                                <li>火锅</li>
+                                <li>海鲜</li>
+                                <li>粤菜</li>
+                                <li>海鲜</li>
+                                <li>川菜</li>
+                            </ul>
+                            <ul>
+                                <li>茶餐厅</li>
+                                <li>咖啡茶馆</li>
+                                <li>小龙虾</li>
+                                <li>闽菜</li>
+                                <li>台湾菜</li>
+                                <li>西北菜</li>
+                                <li>本帮菜</li>
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li class="drop">休闲娱乐
+                        <span>周边玩 ></span>
+                        <span>洗浴</span>
+                        <span>KTV</span>
+                        <div class="nav-list-drop">
+                            <p>休闲娱乐</p>
+                            <ul>
+                                <li>KTV</li>
+                                <li>足疗按摩</li>
+                                <li>洗浴/汗蒸</li>
+                                <li>采摘/农家乐</li>
+                                <li>密室逃脱</li>
+                                <li>桌游</li>
+                                <li>酒吧</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>真人CS</li>
+                                <li>轰趴馆</li>
+                                <li>游戏厅</li>
+                                <li>网吧网咖</li>
+                                <li>文化艺术</li>  
+                            </ul>
+                            
+                        </div>
+                    </li>
+                    <li class="drop">电影 / 在线选座
+                        <div class="nav-list-drop">
+                            <p>电影</p>
+                            <ul>
+                                <li>热映电影</li>
+                                <li>电影团购</li>
+                                <li>找电影院</li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="drop">丽人
+                        <span>美容 ></span>
+                        <span>美甲</span>
+                        <span>美发</span>
+                        <div class="nav-list-drop">
+                            <p>丽人</p>
+                            <ul>
+                                <li>美发</li>
+                                <li>美甲美睫</li>
+                                <li>美容/SPA</li>
+                                <li>医学美容</li>
+                                <li>瘦身纤体</li>
+                                <li>瑜珈/舞蹈</li>
+                                <li>韩式定妆</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>脱毛</li>
+                                <li>祛痘</li>
+                                <li>纹身</li>
+                                <li>其他</li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop">运动健身
+                        <span>更多运动健身 ></span>
+                        <span>健身</span>
+                        <div class="nav-list-drop">
+                            <p>运动健身</p>
+                            <ul>
+                                <li>健身</li>
+                                <li>更多运动健身</li>
+                                <li>游泳</li>
+                                <li>桌球</li>
+                                <li>射击射箭</li>
+                                <li>网球</li>
+                                <li>高尔夫</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>羽毛球</li>
+                                <li>篮球</li>
+                                <li>武术</li>
+                                <li>马术</li>
+                                <li>乒乓球</li>
+                                <li>足球</li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="drop">生活服务
+                        <span>汽车服务 ></span>
+                        <div class="nav-list-drop">
+                            <p>生活服务</p>
+                            <ul>
+                                <li>培训课程</li>
+                                <li>鲜花婚庆</li>
+                                <li>体检保健</li>
+                                <li>商场购物券</li>
+                                <li>个性写真</li>
+                                <li>配眼镜</li>
+                                <li>婚纱摄影</li>
+                                
+                            </ul>
+                            <ul>
+                                <li>照片冲印</li>
+                                <li>家政服务</li>
+                                <li>服装洗护</li>
+                                <li>洗涤护理</li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            <!-- </div> -->
+            
+        </div>
+    </div>
+    
+    <!-- cinema-introduce  -->
+    <div class="cinema">
+        <div class="cinema-left">
+            <div class="introduce">
+                <div class="imgBox">
+                    <img src="../img/movie/cinema_5.jpg" alt="" id='cinemaImg'>
+                </div>
+                <div class="cinema-msg">
+                    <h2 id='cinemaName'> </h2>
+                    <h3>★★★★☆  9.6分</h3>
+                    <p id='cinemaAddresss'> </p>
+                    <p id='cinemaPhone'> </p>
+                    <p id='cinemaTime'> </p>
+                </div>
+            </div>
+            
+            <div class="film-msg">
+                <h3 >影院描述</h3>
+                <p id='cinemaIntroduce'>
+                    
+                </p>
+
+                <div class="movie-number">
+                    <ul>
+                        <li>场次</li>
+                        <li>结束时间</li>
+                        <li>影片名</li>
+                        <li>放映厅</li>
+                        <li>现价</li>
+                        <li>操作</li>
+                    </ul>
+                    <div class="movie-table">
+                        <table id='tbodyBox'>
+                            <!-- <tbody >
+                                
+                            </tbody> -->
+                            
+                        </table>
+                       
+                    </div>
+                    <div class="movie-number-tips">*&nbsp;&nbsp;现价已包含服务费，该影片反映前30分钟关闭售票</div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="cinema-list-right" id='cinemaRecommendBox'>
+            <!-- js动态打印内容 -->
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footerBox">
+            <div class="footer-msg">
+                <div class="footer-msg-guild">
+                    <img src="../img/base/phone.png" alt="">
+                    <p>客服电话</p>
+                    <p>0592-5965232</p>
+                
+                    <img src="../img/base/email.png" alt="">
+                    <p>站务论坛</p>
+                    <p>让我们倾听你的声音</p>
+                </div>
+            </div>
+            <div class="footer-msg">
+                <div class="footer-msg-guild">
+                    <img src="../img/base/email.png" alt="">
+                    <p>商务合作</p>
+                    <p>在点评组织团购</p>
+                    <img src="../img/base/email.png" alt="">
+                    <p>在线客服</p>
+                    <p><button>立即提问</button></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-right-list">
+                    <p>公司信息</p>
+                    <ul>
+                        <li><a href="https://www.cykjxm.com/">关于我们</a> </li>
+                        <li>联系我们</li>
+                        <li>团购用户协议</li>
+                        <li>人才招聘</li>
+                        <li>媒体报道</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-list">
+                    <p>商务合作</p>
+                    <ul>
+                        <li>团购合作</li>
+                        <li>开发者</li>
+                        <li>开放API</li>
+                        <li>友情链接</li>
+                        <li>团购商家客户端</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <div class="footer-right-list">
+                    <p>获得更新</p>
+                    <ul>
+                        <li>点评团新浪微博</li>
+                        <li>点评团QQ空间</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-right-list">
+                    <p>用户帮助</p>
+                    <ul>
+                        <li>如何使用</li>
+                        <li>常见问题</li>
+                        <li>点评团承诺</li>
+                        <li>邮箱白名单设置</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="copyright">
+        <h5>增值电信业务经营许可证：沪B2-20040012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;互联网地图服务资质：乙测资字31202063</h5>
+        <div class="copyright-img">
+            <img src="../img/base/picp_bg.png" alt="" class="Jump">
+            <img src="../img/base/gongshang.gif" alt="" class="Jump">
+            <img src="../img/base/zx110-1.png" alt="" class="Jump">
+            <img src="../img/base/kxwz.jpg" alt="" class="Jump">
+            <img src="../img/base/trust_org.png" alt="" class="Jump">
+            <img src="../img/base/chengxin.png" alt="" class="Jump">
+        </div>
+    </div>
+
+    <!-- login -->
+    <div class="login" style="display: none;" id='loginAdd'>
+        <div class="loginBox">
+            <p>欢迎登录</p><span id='loginClose'>X</span>
+            <input type="text" placeholder="您的手机号" id='loginUser'><span></span>
+            <input type="password" placeholder="您的密码" id='loginPwd'><span></span>
+            <a>忘记密码</a>
+            <input type="text" placeholder="请输入验证码" id='loginKeyCode'><span></span>  
+            <div class="login-box-input-div">
+                <div id="keycode">点击获取验证码</div>
+                <span onclick="addCode()">看不清楚？换过一个</span>
+            </div>
+            <input type="button" value="立即登录" class="loginBtn" id='loginButton' style="width: 81%;">
+        </div>
+    </div>
+    <!-- business login -->
+    <div class="login" style="display: none;" id='businessLogin'>
+        <div class="loginBox">
+            <p>欢迎登录</p><span id='businessClose'>X</span>
+            <input type="text" placeholder="您的账号" id='loginbusiness'><span></span>
+            <input type="password" placeholder="您的密码" id='businessPwd'><span></span>
+            <a>忘记密码</a>
+            
+            <input type="button" value="立即登录" class="loginBtn" id='businessBtn' style="width: 81%;">
+        </div>
+    </div>
+    <!-- register -->
+    <div class="register" id='registerAdd' style="display:none;">
+        <div class="registerBox">
+            <p>注册</p><span id='registerClose'>X</span>
+            <input type="text" placeholder="您的手机号码" id='registerUser'><span></span>
+            <input type="password" placeholder="您的登录密码(2位字母,8位数字)" id='registerPwd'><span></span>
+            <input type="password" placeholder="再次确认密码" id='registerConfirm'><span></span>
+            <a>注册视为同意 《用户使用协议》</a>
+            <input type="button" value="立即注册" class="registerBtn" id='registerButton' style="width: 81%;">
+        </div>
+    </div>
+
+    <!-- buyBox -->
+    <div class="buyBox" style="display:none;" id='buyBox'>
+        <div class="Box">
+            <p>购票</p><span id='buyBoxClose'>X</span>
+            <img src="../img/movie/film/film_13.jpg" id='filmImg'>
+            <div id="filmName">我的姐姐</div>
+            <label id='tickerNumber'>票数：</label>
+            <input type="button" value='-' id='downNum'>
+            <input type="text" value='1' id='ticketNum'>
+            <input type="button" value='+' id='upNum'>
+            <label id='standbyticket'>余票：</label>
+            <input type="button" value="立即购票" id='buyBtn'>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/base.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../js/filmDetails.js"></script>
+</html>
